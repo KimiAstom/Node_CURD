@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>添加人员</title>
+    <link href="/public/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .btn-default {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <h1>添加人员 <a class="btn btn-info btn-sm" href="/">首页</a></h1>
+    <form action="/student/new" method="post">
+        <div class="form-group">
+            <label>姓名</label>
+            <input class="form-control" name="name" placeholder="请输入姓名" required type="text">
+            <label>年龄</label>
+            <input class="form-control" name="age" placeholder="请输入年龄" required type="number">
+            <label>性别</label>
+            <input class="form-control" name="sex" placeholder="请输入性别" required type="text">
+            <label>爱好</label>
+            <input class="form-control" name="hobby" placeholder="请输入爱好" required type="text">
+        </div>
+        <button class="btn btn-default" type="submit">提交</button>
+    </form>
+</div>
+</body>
+</html>
